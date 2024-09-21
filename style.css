@@ -181,6 +181,12 @@ header a{
     color: #fff;
 
 }
+.mobile-menu-btn{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
 
 
 
@@ -200,6 +206,15 @@ header a{
 
 @media screen and (max-width:656px) {
     .desk-menu-wrapper{
+        display: none;
+    }
+    .mobile-menu-btn{
+        display: block;
+    }
+    .menu-close img{
+        display: none;
+    }
+    .signIn-btn{
         display: none;
     }
 }
