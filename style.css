@@ -153,25 +153,41 @@ header a{
 }
 
 
-.signIn-btn{
-    grid-column: 11/13;
+/* .signIn-btn{
+    grid-column: 11/14;
     max-width: 6.938rem;
     min-height: 2.5rem;
     background-color: #ffffe133;
     justify-self: end;
-    /* position: absolute; */
-    /* right: 0; */
-    /* padding: 0.4rem 1.1rem; */
-    /* text-transform: capitalize; */
+    
+} */
+
+
+.header-btn{
+    grid-column: 12/14;
+    color: #fff;
+    background-color: #ffffe133;
+    padding: 0.675rem 1.575rem;
+    text-transform: capitalize;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    font-family: var(--ff-robo);
+    border: none;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    margin-left: -40px;
+    max-width: 7.5rem;
 }
-.signIn-btn:hover,
-.signIn-btn:focus,
-.signIn-btn:active{
+
+.header-btn:hover,
+.header-btn:focus,
+.header-btn:active{
     background-color: #ffffe133;
     color: var(--dark-blue-color);
 }
 
-.btn{
+/* .btn{
     padding: 0.375rem 0.5rem;
     text-transform: capitalize;
     border-radius: 1rem;
@@ -181,7 +197,7 @@ header a{
     font-weight: 500;
     color: #fff;
 
-}
+} */
 .mobile-menu-btn{
     display: none;
 }
@@ -210,6 +226,7 @@ header a{
     /* border: 1px solid; */
     padding: 1rem;
     /* text-align: center; */
+    align-self: center;
 }
 .hero-img-wrapper{
     grid-column: 7/ span 7;
@@ -217,17 +234,17 @@ header a{
     
 }
 .hero-text h2{
-    font-size: 75px;
+    font-size: 4.688rem;
     font-weight: 600;
-    line-height: 90px;
+    line-height: 5.625rem;
     margin: 0;
     padding: 0;
     
 }
 .hero-text p{
     font-family: var(--ff-robo);
-    font-size: 21px;
-    margin-bottom: 30px;
+    font-size: 1.313rem;
+    margin-bottom: 1.875rem;
 }
 
 .hero-btn{
@@ -242,19 +259,43 @@ header a{
 .try-btn{
     background-color: var(--white-color);
     color: var(--blue-color);
-    padding: 0.6rem 1.5rem;
+    padding: 0.675rem 1.575rem;
+    border-radius: 1rem;
+    font-family: var(--ff-robo);
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    text-align: center;
+    align-self: center;
+    font-weight: 500;
 }
 
-button{
-    outline: 1px soid wheat;
+.try-btn:hover,
+.try-btn:focus,
+.try-btn:active{
+    background-color: #2B353E;
+    color: #FBA229;
 }
-.hero-btn .demo-btn{
+.demo-btn{
+    outline: 0.125rem solid #fff;
     padding: 0.6rem 1.5rem;
     background-color: transparent;
-    color: #212121;
-    border: 2px soild !important;
+    color: #fff;
+    padding: 0.675rem 1.575rem;
+    border-radius: 1rem;
+    font-family: var(--ff-robo);
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    text-align: center;
+    align-self: center;
+    font-weight: 500;
 }
-
+.demo-btn:hover,
+.demo-btn:focus,
+.demo-btn:active{
+    background-color: #2B353E;
+    color: #FBA229;
+    outline: none;
+}
 
 /* media query */
 
@@ -268,6 +309,14 @@ button{
     .btn{
         padding: 0.38rem 0.6rem;
     }
+    .hero-text-wrapper{
+        grid-column: 1/ span 7;
+    }
+    .hero-img-wrapper{
+        grid-column: 8/ span 5;
+        
+        
+    }
 }
 
 @media screen and (max-width:656px) {
@@ -280,7 +329,32 @@ button{
     .menu-close img{
         display: none;
     }
-    .signIn-btn{
+    .header-btn{
         display: none;
     }
+    .hero-wrapper{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        /* padding-bottom: 2rem; */
+    }
+    .hero-img-wrapper img{
+        /* border: solid; */
+        height: 80%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:390px) {
+    .hero-text h2{
+        font-size: 3.4rem;
+        line-height: normal;
+    }
+    .hero-img-wrapper{
+        /* max-width: 80%; */
+        min-height: 40%;
+    }
+    
 }
