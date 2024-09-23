@@ -404,6 +404,59 @@ header a{
     color: #2B353E;
     opacity: 70%;
 }
+.footer-wrapper{
+    /* display: flex;
+    gap: 2rem;
+    padding: 1rem;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 2rem;
+    padding: 1rem;
+    padding-top: 1.6rem;
+}
+.logo-section{
+   grid-column: 1/span 4;
+}
+.help-section{
+   grid-column: 5/ span 2;
+}
+.features-section{
+    grid-column: 7/ span 2;
+}
+.company-section{
+    grid-column: 9/ span 2;
+}
+.contact-section{
+    grid-column: 11/ span 2;
+}
+.footer-section
+{
+   display: flex;
+   flex-direction: column;
+   gap: 1.2rem;
+}
+.footer-section p,
+.footer-section address
+{
+    color: var(--dark-blue-color);
+    opacity: 70%;
+    font-family: var(--ff-robo);
+    font-size: 0.813rem;
+}
+.footer-section h2{
+    font-family: var(--ff-pop);
+    font-size: 18px;
+    color: var(--dark-blue-color);
+    font-weight: 500;
+}
+.logo-section .logo h2 a{
+  color: var(--blue-color);
+  /* background-color: #ca3c3c; */
+}
+.logo-section .logo h2 a span{
+    font-weight: 300;
+}
 /* media query */
 
 @media screen and (max-width:1024px) {
@@ -463,6 +516,9 @@ header a{
     }
     .dashboard-text-wrapper p{
         margin-bottom: 0;
+    }
+    .footer-wrapper{
+        gap: 1rem;
     }
     
 }
@@ -532,6 +588,13 @@ header a{
     
         max-width: 100%;
        
+    }
+    .footer-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1.2rem;
+        padding: 1rem;
     }
 }
 
