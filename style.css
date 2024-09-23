@@ -585,9 +585,7 @@ header a{
         text-align: justify;
     }
     .work-text-wrapper h2{
-    
-        max-width: 100%;
-       
+        max-width: 100%;  
     }
     .footer-wrapper{
         display: flex;
